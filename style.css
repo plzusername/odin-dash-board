@@ -53,6 +53,7 @@ img[src$='.svg']{
 }
 .section{
   margin-left: 35px;
+  margin-top:45px ;
 }
 img:not([src$='.svg']){
   width:40px;
@@ -111,12 +112,13 @@ button{
 }
 header{
   box-shadow: 10px 0px 10px grey;
+  z-index: 2;
 }
 .text-container{
   display:flex;
   align-items: center;
   margin-bottom: 10px;
-  gap:7px;
+  gap:13px;
 }
 .row-2 .text-container .big-image{
   width:70px;
@@ -127,4 +129,32 @@ header{
 }
 .text-container p{
   font-size: 28px;
+}
+main{
+  padding:15px;
+  background-color: rgb(230, 230, 230);
+  z-index: 1;
+}
+article{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap:20px;
+}
+main > h2{
+  margin:10px 0;
+}
+.box{
+  width: 400px;
+  border-radius: 10px;
+  height:250px;
+  display: grid;
+  padding: 20px;
+  grid-template-rows: 1fr 1fr;
+  background-color: white;
+  border-left: solid 10px #f43f5e;  
+}
+.icons{
+  align-self:end;
+  justify-self: end;
 }

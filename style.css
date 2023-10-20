@@ -17,6 +17,9 @@
   --900:#881337;
   --950:#4c0519;
 }
+ul{
+  list-style: none;
+}
 body{
     display: grid;
     height: 100vh;
@@ -56,8 +59,8 @@ img[src$='.svg']{
   margin-top:45px ;
 }
 img:not([src$='.svg']){
-  width:40px;
-  height:40px;
+  width:50px;
+  height:50px;
   border-radius: 50%;
 }
 .row-1{
@@ -135,17 +138,22 @@ main{
   background-color: rgb(230, 230, 230);
   z-index: 1;
 }
+.main-con{
+  column-gap: 25px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
 article{
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-  gap:20px;
+  grid-template-rows: repeat(3,1fr);
+  gap:40px;
 }
 main > h2{
   margin:10px 0;
 }
 .box{
-  width: 400px;
+  width: 530px;
   border-radius: 10px;
   height:250px;
   display: grid;
@@ -154,7 +162,60 @@ main > h2{
   background-color: white;
   border-left: solid 10px #f43f5e;  
 }
+.box p{
+  width:400px;
+}
 .icons{
   align-self:end;
   justify-self: end;
+}
+p{
+  font-weight: 500;
+}
+.txt-con p{
+  font-weight: bold;
+}
+.rectangle{
+  background-color: white;
+  padding:30px;
+  border-radius: 15px;
+}
+.job p{
+  width: 300px;
+}
+.job{
+  border-bottom: 2px solid #ffe4e6;
+  padding-bottom: 15px;
+}
+.job:last-child{
+  border-bottom: none;
+}
+.titles{
+  display:flex;
+  justify-content: space-between;
+}
+.rectangle >ul>li{
+  margin-bottom: 20px;
+  margin-left: 10px;
+  display:grid;
+  grid-template-columns:1fr 4fr ;
+}
+
+.rectangle >ul>li>p{
+  margin:0;
+  font-size: 12px;
+}
+.rectangle>ul p{
+  font-size: small;
+  opacity: 0.8;
+}
+.sidebar .rectangle+h2{
+  margin-top: 90px;
+}
+.sidebar{
+  margin-top: -33px;
+}
+.sidebar >h2{
+  position: relative;
+  bottom: 5px;
 }

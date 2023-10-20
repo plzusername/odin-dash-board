@@ -53,3 +53,37 @@ img[src$='.svg']{
 .section{
   margin-left: 35px;
 }
+img:not([src$='.svg']){
+  width:40px;
+  height:40px;
+  border-radius: 50%;
+}
+.row-1{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-auto-flow: column;
+  column-gap: 100px;
+}
+.row-1,.row-2{
+  margin: 30px;
+}
+.first-item{
+  display: grid;
+  grid-template-columns: 25px 1fr;
+}
+input[type='search']{
+  border-radius: 30px;
+  padding:5px;
+  appearance: none;
+  border: none;
+  background-color: #fecdd3;
+  font-size: 20px;
+}
+.top-marg{
+  margin-top:10px;
+}
+.second-item{
+  display:grid;
+  align-items: center;
+  grid-template-columns: repeat(3,4vw);
+}
